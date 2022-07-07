@@ -199,10 +199,13 @@ const App = () => {
           {currentAccount === "" ? (
               renderNotConnectedContainer()
           ) : (
+          <div className="button-container">
+            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button" >
+            Mint NFT
+            </button>
+            <button className="cta-button opensea-button" onClick={openOpenSea}>Check you NFT at Open Sea!</button>
+          </div>
 
-              <button onClick={askContractToMintNft} className="cta-button connect-wallet-button" >
-                Mint NFT
-              </button>
           )}
         </div>
         {isMinting && (   <div className="load-spinner-container">
@@ -211,7 +214,6 @@ const App = () => {
 
 
         <div className="footer-container">
-          <button className="opensea-button" onClick={openOpenSea}>Check you NFT at Open Sea!</button>
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
             className="footer-text"

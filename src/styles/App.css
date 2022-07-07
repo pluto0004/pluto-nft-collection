@@ -54,9 +54,11 @@
   animation: gradient-animation 4s ease infinite;
 }
 
-.connect-wallet-button:disabled{
-  background: #cccccc;
-  color: #666666;
+.opensea-button {
+  margin-top: 2%;
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
 }
 
 .mint-button {
@@ -66,8 +68,10 @@
   margin-right: 15px;
 }
 
-.opensea-button {
-  background-color: rgb(32, 129, 226);
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mint-count {
