@@ -54,6 +54,11 @@
   animation: gradient-animation 4s ease infinite;
 }
 
+.connect-wallet-button:disabled{
+  background: #cccccc;
+  color: #666666;
+}
+
 .mint-button {
   background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
   background-size: 200% 200%;
@@ -87,6 +92,11 @@
   color: white;
   font-size: 16px;
   font-weight: bold;
+}
+
+.load-spinner-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* KeyFrames */
